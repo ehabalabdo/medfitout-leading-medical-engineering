@@ -1,0 +1,7 @@
+{
+  "name": "MEDFITOUT - Leading Medical Engineering",
+  "description": "A specialized medical engineering consultancy website for doctors and health investors, offering integrated design, technical consultancy, and project management.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
