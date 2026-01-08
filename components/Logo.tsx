@@ -14,12 +14,12 @@ const Logo: React.FC<LogoProps> = ({ light = false, className = "" }) => {
   const [imageError, setImageError] = useState(false);
 
   return (
-    <div className={`flex flex-col md:flex-row items-center gap-3 md:gap-3 ${className}`}>
+    <div className={`flex flex-col md:flex-row items-center gap-6 md:gap-3 ${className}`}>
       {!imageError && (
         <img 
           src="/medfitout-logo.png" 
           alt="MEDFITOUT Logo" 
-          className="h-14 w-14 object-contain" 
+          className="h-10 w-10 md:h-14 md:w-14 object-contain" 
           onError={() => setImageError(true)}
           loading="lazy"
           width={56}
