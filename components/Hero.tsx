@@ -9,7 +9,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
   return (
-    <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden bg-[#0a1f22]">
+    <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden bg-[#0a1f22] pt-32 md:pt-0">
       {/* Premium Background */}
       <div className="absolute inset-0 z-0">
         <img 
