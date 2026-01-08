@@ -14,7 +14,7 @@ const Logo: React.FC<LogoProps> = ({ light = false, className = "" }) => {
   const [imageError, setImageError] = useState(false);
 
   return (
-    <div className={`flex items-center gap-3 ${className}`}>
+    <div className={`flex flex-col md:flex-row items-center gap-3 md:gap-3 ${className}`}>
       {!imageError && (
         <img 
           src="/medfitout-logo.png" 
@@ -26,7 +26,7 @@ const Logo: React.FC<LogoProps> = ({ light = false, className = "" }) => {
           height={56}
         />
       )}
-      <div className={`flex flex-col leading-none ${light ? 'text-white' : 'text-brand-dark'} text-right`}>
+      <div className={`flex flex-col leading-none ${light ? 'text-white' : 'text-brand-dark'} text-center md:text-right`}>
         <span className="text-2xl md:text-3xl font-black tracking-tighter">
           MED<span className="text-brand-light">FITOUT</span>
         </span>
