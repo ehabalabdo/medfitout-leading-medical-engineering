@@ -34,7 +34,7 @@ const WhyChooseUs: React.FC = () => {
             <div className="inline-block px-4 py-1 bg-brand-light/10 text-brand-dark font-bold rounded-lg mb-4">لماذا نحن؟</div>
             <h3 className="text-4xl md:text-5xl font-extrabold text-brand-dark mb-8 leading-tight">ندمج الخبرة الهندسية بالمعرفة الطبية</h3>
             <p className="text-slate-600 text-xl mb-12 leading-relaxed">
-              في MEDFITOUT، ندرك أن العيادة ليست مجرد جدران وأثاث، بل هي بيئة تشغيلية معقدة تتطلب فهماً عميقاً لبروتوكولات التعقيم، أحمال الأجهزة الكهربائية، وراحة المريض.
+              في MEDFITOUT، ندرك أن العيادة ليست مجرد جدران وأثاث، بل هي بيئة تشغيلية معقدة تتطلب فهماً عميقاً للمعايير الطبية وراحة المريض.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
