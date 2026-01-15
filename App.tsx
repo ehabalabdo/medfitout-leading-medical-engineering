@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import { MessageCircle } from 'lucide-react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -62,6 +63,16 @@ const App: React.FC = () => {
           </div>
         )}
       </main>
+
+      <a
+        href="https://wa.me/962785085077"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="WhatsApp"
+        className="fixed bottom-6 right-6 z-50 rounded-full bg-[#25D366] text-white shadow-[0_20px_35px_-12px_rgba(0,0,0,0.45)] hover:scale-[1.06] active:scale-95 transition-transform duration-200 w-14 h-14 flex items-center justify-center"
+      >
+        <MessageCircle size={28} />
+      </a>
 
       <Footer />
     </div>
