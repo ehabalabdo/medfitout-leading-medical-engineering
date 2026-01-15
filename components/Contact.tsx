@@ -69,7 +69,7 @@ const Contact: React.FC<ContactProps> = ({ onBack }) => {
                 </div>
                 <div>
                   <h4 className="text-2xl font-bold mb-2">اتصل بنا</h4>
-                  <p className="text-slate-400 text-lg font-mono tracking-wider" dir="ltr">00962797973766</p>
+                  <p className="text-slate-400 text-lg font-mono tracking-wider" dir="ltr">00962785085077</p>
                 </div>
               </div>
 

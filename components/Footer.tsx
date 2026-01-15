@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
             <h4 className="text-white font-black text-xl mb-8">لماذا MEDFITOUT؟</h4>
             <ul className="space-y-5 text-lg">
               <li>متخصصون حصرياً في القطاع الطبي</li>
-              <li>خبراء بمعايير الجودة العالمية</li>
+              <li>خبراء بمعايير العالمية</li>
               <li>توفير في تكاليف التأسيس</li>
               <li>إدارة مشاريع واحترافية عالية</li>
             </ul>
@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
             <h4 className="text-white font-black text-xl mb-8">تواصل معنا</h4>
             <div className="p-6 bg-brand-dark/50 rounded-2xl border border-brand-light/10 shadow-inner">
               <p className="text-sm font-bold text-brand-light mb-2 uppercase tracking-widest">تواصل مباشر</p>
-              <p className="text-white text-xl font-black tracking-wider mb-2 font-mono" dir="ltr">00962797973766</p>
+              <p className="text-white text-xl font-black tracking-wider mb-2 font-mono" dir="ltr">00962785085077</p>
               <p className="text-brand-light/70 text-sm font-mono lowercase mb-2">info@med-fitout.com</p>
               <p className="text-slate-400 text-sm border-t border-white/5 pt-2 mt-2">عمان، الأردن</p>
             </div>
@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="mt-20 pt-10 border-t border-brand-light/5 text-center text-sm font-medium tracking-wide">
-          <p>© {new Date().getFullYear()} MEDFITOUT. كافة الحقوق محفوظة.</p>
+          <p>© {new Date().getFullYear()} MEDFITOUT.</p>
         </div>
       </div>
     </footer>

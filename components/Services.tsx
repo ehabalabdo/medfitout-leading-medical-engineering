@@ -14,7 +14,6 @@ const Services: React.FC<ServicesProps> = ({ onBack }) => {
       icon: <ClipboardCheck size={36} />,
       description: "نساعدك في البداية الصحيحة لتجنب الأخطاء المكلفة لاحقاً.",
       features: [
-        "دراسة العقارات وتقييم صلاحيتها للترخيص",
         "دراسة العروض الفنية للأجهزة الطبية",
         "مستشارك الأمين لاختيار الأجهزة الأنسب لميزانيتك"
       ]
@@ -23,7 +22,7 @@ const Services: React.FC<ServicesProps> = ({ onBack }) => {
       title: "التصميم الهندسي المتخصص",
       subtitle: "Specialized Design",
       icon: <Layout size={36} />,
-      description: "توزيع يجمع بين الجمالية والوظيفة الطبية المعقدة.",
+      description: "توزيع يجمع بين الجمالية والوظيفة الطبية.",
       features: [
         "مراعاة رحلة المريض (Patient Journey)",
         "مخططات كهروميكانيكية (MEP) دقيقة جداً",

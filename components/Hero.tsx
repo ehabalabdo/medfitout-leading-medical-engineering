@@ -32,7 +32,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
           </h1>
           
           <p className="text-xl md:text-2xl text-slate-300 mb-14 leading-relaxed max-w-2xl mx-auto font-medium">
-            تأسست MEDFITOUT لتكون الشريك الهندسي الأول للأطباء والمستثمرين في القطاع الصحي.
+            تأسست MEDFITOUT لتكون الشريك الهندسي للأطباء والمستثمرين في القطاع الصحي.
           </p>
           
           <div className="flex flex-col sm:flex-row-reverse items-center justify-center gap-6 w-full sm:w-auto">
