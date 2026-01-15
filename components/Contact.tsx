@@ -126,12 +126,22 @@ const Contact: React.FC<ContactProps> = ({ onBack }) => {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-black text-brand-dark mb-3 uppercase tracking-wider">نوع المشروع</label>
-                  <input 
-                    type="text" 
-                    placeholder="عيادة، مركز طبي..."
+                  <label className="block text-sm font-black text-brand-dark mb-3 uppercase tracking-wider">الخدمة المطلوبة</label>
+                  <select
+                    required
                     className="w-full px-6 py-5 bg-slate-50 border-2 border-slate-100 rounded-2xl focus:outline-none focus:border-brand-light focus:bg-white transition-all text-right font-medium"
-                  />
+                    defaultValue=""
+                  >
+                    <option value="" disabled>اختر الخدمة المطلوبة</option>
+                    <option>استدراج عروض اسعار لكافة الامور (مدني، ميكانيك، كهرباء، أثاث طبي وغير طبي، الأجهزة الطبية)</option>
+                    <option>دراسة عروض اسعار</option>
+                    <option>دراسة عروض فنية</option>
+                    <option>دراسة جدوى</option>
+                    <option>إشراف على الاستلام حسب مواصفات وتركيب</option>
+                    <option>إشراف أو إبداء الرأي ومقترح على تصاميم داخلي من ناحية هندسية طبية</option>
+                    <option>الإشراف على التشطيبات الداخلية</option>
+                    <option>الإشراف على تمديدات الكهروميكانيكية</option>
+                  </select>
                 </div>
               </div>
 
@@ -157,3 +167,7 @@ const Contact: React.FC<ContactProps> = ({ onBack }) => {
 };
 
 export default Contact;
+
+
+
+
