@@ -54,7 +54,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
           <div className="mt-20 flex flex-wrap justify-center gap-x-12 gap-y-6">
             <div className="flex items-center gap-3 text-white/70">
               <CheckCircle2 className="text-brand-light" size={22} />
-              <span className="text-lg font-bold text-center">معايير وزارة الصحة</span>
+              <span className="text-lg font-bold text-center">دراسة مخططات هندسية</span>
             </div>
             <div className="flex items-center gap-3 text-white/70">
               <CheckCircle2 className="text-brand-light" size={22} />
