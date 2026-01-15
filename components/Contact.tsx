@@ -79,7 +79,7 @@ const Contact: React.FC<ContactProps> = ({ onBack }) => {
                 </div>
                 <div>
                   <h4 className="text-2xl font-bold mb-2">البريد الإلكتروني</h4>
-                  <p className="text-slate-400 text-lg font-mono">info@med-fitout.com</p>
+                  <a href="mailto:info@med-fitout.com" className="text-slate-400 text-lg font-mono hover:text-brand-light transition-colors">info@med-fitout.com</a>
                 </div>
               </div>
 

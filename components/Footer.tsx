@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
             <div className="p-6 bg-brand-dark/50 rounded-2xl border border-brand-light/10 shadow-inner">
               <p className="text-sm font-bold text-brand-light mb-2 uppercase tracking-widest">تواصل مباشر</p>
               <p className="text-white text-xl font-black tracking-wider mb-2 font-mono" dir="ltr">00962785085077</p>
-              <p className="text-brand-light/70 text-sm font-mono lowercase mb-2">info@med-fitout.com</p>
+              <a href="mailto:info@med-fitout.com" className="text-brand-light/70 text-sm font-mono lowercase mb-2 hover:text-brand-light transition-colors">info@med-fitout.com</a>
               <p className="text-slate-400 text-sm border-t border-white/5 pt-2 mt-2">عمان، الأردن</p>
             </div>
           </div>
