@@ -9,6 +9,7 @@ interface ContactProps {
 const Contact: React.FC<ContactProps> = ({ onBack }) => {
   const [status, setStatus] = useState<string | null>(null);
   const timeoutRef = useRef<number | null>(null);
+  const formRef = useRef<HTMLFormElement | null>(null);
 
   useEffect(() => {
     return () => {
@@ -38,6 +39,49 @@ const Contact: React.FC<ContactProps> = ({ onBack }) => {
         setStatus(null);
       }, 2000);
     }, 1200);
+  };
+
+  const readFields = () => {
+    const form = formRef.current;
+    if (!form) return null;
+    const data = new FormData(form);
+    const fullName = (data.get('fullName') || '').toString().trim();
+    const phone = (data.get('phone') || '').toString().trim();
+    const service = (data.get('service') || '').toString().trim();
+    if (!fullName || !phone || !service) return null;
+    return { fullName, phone, service };
+  };
+
+  const buildMessageLines = (fields: { fullName: string; phone: string; service: string }) => [
+    'مرحباً،',
+    'أرغب بحجز استشارة فنية.',
+    '',
+    `الاسم: ${fields.fullName}`,
+    `رقم الهاتف: ${fields.phone}`,
+    `الخدمة المطلوبة: ${fields.service}`
+  ];
+
+  const handleWhatsApp = () => {
+    const fields = readFields();
+    if (!fields) {
+      alert('يرجى تعبئة الاسم ورقم الهاتف والخدمة المطلوبة.');
+      return;
+    }
+    const message = encodeURIComponent(buildMessageLines(fields).join('\n'));
+    const url = `https://wa.me/962785085077?text=${message}`;
+    window.open(url, '_blank');
+  };
+
+  const handleEmail = () => {
+    const fields = readFields();
+    if (!fields) {
+      alert('يرجى تعبئة الاسم ورقم الهاتف والخدمة المطلوبة.');
+      return;
+    }
+    const subject = encodeURIComponent('طلب استشارة فنية – MEDFITOUT');
+    const body = encodeURIComponent(buildMessageLines(fields).join('\n'));
+    const url = `mailto:info@med-fitout.com?subject=${subject}&body=${body}`;
+    window.location.href = url;
   };
 
   return (
@@ -104,13 +148,14 @@ const Contact: React.FC<ContactProps> = ({ onBack }) => {
           <div className="bg-white rounded-[3.5rem] p-10 md:p-16 text-slate-900 shadow-2xl">
             <h4 className="text-3xl font-black mb-10 text-right leading-tight">احجز موعد استشارة فنية</h4>
             
-            <form onSubmit={handleSubmit} className="space-y-8 text-right">
+            <form ref={formRef} onSubmit={handleSubmit} className="space-y-8 text-right">
               <div>
                 <label className="block text-sm font-black text-brand-dark mb-3 uppercase tracking-wider">الاسم الكامل</label>
                 <input 
                   type="text" 
                   required
                   placeholder="د. ...."
+                  name="fullName"
                   className="w-full px-6 py-5 bg-slate-50 border-2 border-slate-100 rounded-2xl focus:outline-none focus:border-brand-light focus:bg-white transition-all text-right font-medium"
                 />
               </div>
@@ -122,6 +167,7 @@ const Contact: React.FC<ContactProps> = ({ onBack }) => {
                     type="tel" 
                     required
                     placeholder="000 xxxxxxx"
+                    name="phone"
                     className="w-full px-6 py-5 bg-slate-50 border-2 border-slate-100 rounded-2xl focus:outline-none focus:border-brand-light focus:bg-white transition-all text-right font-medium"
                   />
                 </div>
@@ -129,6 +175,7 @@ const Contact: React.FC<ContactProps> = ({ onBack }) => {
                   <label className="block text-sm font-black text-brand-dark mb-3 uppercase tracking-wider">الخدمة المطلوبة</label>
                   <select
                     required
+                    name="service"
                     className="w-full px-6 py-5 bg-slate-50 border-2 border-slate-100 rounded-2xl focus:outline-none focus:border-brand-light focus:bg-white transition-all text-right font-medium"
                     defaultValue=""
                   >
@@ -145,18 +192,37 @@ const Contact: React.FC<ContactProps> = ({ onBack }) => {
                 </div>
               </div>
 
-              <button 
-                type="submit" 
-                disabled={status === 'sending'}
-                className={`w-full py-6 rounded-[1.5rem] font-black text-xl flex items-center justify-center gap-4 transition-all shadow-xl ${
-                  status === 'success' 
-                    ? 'bg-green-500 text-white' 
-                    : 'bg-brand-dark text-white hover:bg-brand-light shadow-brand-dark/20'
-                }`}
-              >
-                {status === 'sending' ? 'جاري الإرسال...' : status === 'success' ? 'تم الإرسال بنجاح' : 'إرسال الطلب'}
-                <Send size={24} className={status === 'sending' ? 'animate-pulse' : ''} />
-              </button>
+              <div className="space-y-4">
+                <button 
+                  type="submit" 
+                  disabled={status === 'sending'}
+                  className={`w-full py-6 rounded-[1.5rem] font-black text-xl flex items-center justify-center gap-4 transition-all shadow-xl ${
+                    status === 'success' 
+                      ? 'bg-green-500 text-white' 
+                      : 'bg-brand-dark text-white hover:bg-brand-light shadow-brand-dark/20'
+                  }`}
+                >
+                  {status === 'sending' ? 'جاري الإرسال...' : status === 'success' ? 'تم الإرسال بنجاح' : 'إرسال الطلب'}
+                  <Send size={24} className={status === 'sending' ? 'animate-pulse' : ''} />
+                </button>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  <button
+                    type="button"
+                    onClick={handleWhatsApp}
+                    className="w-full py-4 rounded-[1.25rem] font-black text-lg bg-[#25D366] text-white hover:opacity-90 transition-all shadow-md"
+                  >
+                    إرسال عبر واتساب
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handleEmail}
+                    className="w-full py-4 rounded-[1.25rem] font-black text-lg bg-brand-dark text-white hover:bg-brand-light transition-all shadow-md"
+                  >
+                    إرسال عبر البريد
+                  </button>
+                </div>
+              </div>
             </form>
           </div>
 
