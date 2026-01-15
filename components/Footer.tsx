@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, MessageCircle } from 'lucide-react';
 import Logo from './Logo';
 
 const Footer: React.FC = () => {
@@ -18,6 +18,7 @@ const Footer: React.FC = () => {
             </p>
             <div className="flex justify-end gap-5">
               {[
+                { Icon: MessageCircle, href: 'https://wa.me/962785085077', label: 'WhatsApp' },
                 { Icon: Linkedin, href: 'https://www.linkedin.com/company/medfitout/', label: 'LinkedIn' },
                 { Icon: Instagram, href: 'https://www.instagram.com/medfitout/', label: 'Instagram' },
                 { Icon: Facebook, href: 'https://www.facebook.com/profile.php?id=61585265275754', label: 'Facebook' }
