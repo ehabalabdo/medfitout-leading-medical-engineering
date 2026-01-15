@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Logo from './Logo';
 
@@ -13,11 +12,11 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled, onHome }) => {
       isScrolled ? 'bg-brand-dark/90 backdrop-blur-md py-4 shadow-xl' : 'bg-transparent py-10 md:py-6'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-start items-center h-16">
+        <div className="flex justify-start items-center h-20 md:h-16">
           <button 
             className="cursor-pointer hover:scale-105 transition-transform outline-none border-none bg-transparent" 
             onClick={onHome}
-            aria-label="العودة للرئيسية"
+            aria-label="?????? ????????"
           >
             <Logo light={true} />
           </button>
