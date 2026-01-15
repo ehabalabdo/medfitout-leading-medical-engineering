@@ -71,7 +71,7 @@ const Contact: React.FC<ContactProps> = ({ onBack }) => {
                   <h4 className="text-2xl font-bold mb-2">اتصل بنا</h4>
                   <a
                     href="tel:00962785085077"
-                    className="text-slate-400 text-lg font-mono tracking-wider hover:text-brand-light transition-colors"
+                    className="block text-slate-400 text-lg font-mono tracking-wider hover:text-brand-light transition-colors"
                     dir="ltr"
                   >
                     00962785085077
@@ -85,7 +85,7 @@ const Contact: React.FC<ContactProps> = ({ onBack }) => {
                 </div>
                 <div>
                   <h4 className="text-2xl font-bold mb-2">البريد الإلكتروني</h4>
-                  <a href="mailto:info@med-fitout.com" className="text-slate-400 text-lg font-mono hover:text-brand-light transition-colors">info@med-fitout.com</a>
+                  <a href="mailto:info@med-fitout.com" className="block text-slate-400 text-lg font-mono hover:text-brand-light transition-colors">info@med-fitout.com</a>
                 </div>
               </div>
 

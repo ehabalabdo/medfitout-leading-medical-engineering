@@ -61,7 +61,6 @@ const WhyChooseUs: React.FC = () => {
             <div className="absolute -bottom-10 -right-10 bg-white p-10 rounded-[2.5rem] shadow-[0_20px_50px_rgba(26,83,92,0.2)] border border-brand-light/10 max-w-sm text-right z-20">
               <p className="text-brand-dark font-black text-6xl mb-3 tracking-tighter">100%</p>
               <p className="text-slate-900 font-extrabold text-2xl mb-2">مطابقة للمعايير</p>
-              <p className="text-slate-500 text-lg font-medium leading-relaxed">نضمن لك تجاوز كافة التفتيشات الهندسية من الجهات المختصة بنجاح.</p>
             </div>
           </div>
         </div>

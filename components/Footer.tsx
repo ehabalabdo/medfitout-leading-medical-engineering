@@ -53,12 +53,12 @@ const Footer: React.FC = () => {
               <p className="text-sm font-bold text-brand-light mb-2 uppercase tracking-widest">تواصل مباشر</p>
               <a
                 href="tel:00962785085077"
-                className="text-white text-xl font-black tracking-wider mb-2 font-mono hover:text-brand-light transition-colors"
+                className="block text-white text-xl font-black tracking-wider mb-2 font-mono hover:text-brand-light transition-colors"
                 dir="ltr"
               >
                 00962785085077
               </a>
-              <a href="mailto:info@med-fitout.com" className="text-brand-light/70 text-sm font-mono lowercase mb-2 hover:text-brand-light transition-colors">info@med-fitout.com</a>
+              <a href="mailto:info@med-fitout.com" className="block text-brand-light/70 text-sm font-mono lowercase mb-2 hover:text-brand-light transition-colors">info@med-fitout.com</a>
               <p className="text-slate-400 text-sm border-t border-white/5 pt-2 mt-2">عمان، الأردن</p>
             </div>
           </div>
