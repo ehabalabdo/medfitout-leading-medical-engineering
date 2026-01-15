@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Facebook, Instagram } from 'lucide-react';
+import { Facebook, Instagram, Linkedin } from 'lucide-react';
 import Logo from './Logo';
 
 const Footer: React.FC = () => {
@@ -14,10 +14,11 @@ const Footer: React.FC = () => {
               <Logo light />
             </div>
             <p className="leading-relaxed mb-8 text-lg">
-              الشريك الهندسي الأول لتأسيس المنشآت الطبية. نحن نتقن لغة الطب والهندسة معاً.
+              الشريك الهندسي لتأسيس المنشآت الطبية. نحن نتقن لغة الطب والهندسة معاً.
             </p>
             <div className="flex justify-end gap-5">
               {[
+                { Icon: Linkedin, href: 'https://www.linkedin.com/company/medfitout/', label: 'LinkedIn' },
                 { Icon: Instagram, href: 'https://www.instagram.com/medfitout/', label: 'Instagram' },
                 { Icon: Facebook, href: 'https://www.facebook.com/profile.php?id=61585265275754', label: 'Facebook' }
               ].map(({ Icon, href, label }) => (

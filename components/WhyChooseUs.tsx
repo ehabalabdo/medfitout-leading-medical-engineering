@@ -5,7 +5,7 @@ import { UserCheck, Clock, BadgeDollarSign, HeartPulse } from 'lucide-react';
 const WhyChooseUs: React.FC = () => {
   const reasons = [
     {
-      title: "توفير العناء",
+      title: "توفير الجهد والوقت",
       description: "نوفر عليك عناء التنسيق بين عشرات الجهات والمقاولين والموردين.",
       icon: <UserCheck size={32} />
     },
