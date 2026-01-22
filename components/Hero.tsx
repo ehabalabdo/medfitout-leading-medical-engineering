@@ -2,12 +2,15 @@
 import React from 'react';
 import { ArrowLeft, CheckCircle2 } from 'lucide-react';
 import { View } from '../App';
+import { useLanguage } from '../contexts/LanguageContext';
 
 interface HeroProps {
   onNavigate: (view: View) => void;
 }
 
 const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
+  const { t, language } = useLanguage();
+  
   return (
     <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden bg-[#0a1f22] pt-44 md:pt-0">
       {/* Premium Background */}
@@ -27,42 +30,42 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
         <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
           
           <h1 className="text-5xl md:text-[84px] font-[900] text-white mb-10 leading-[1.1] tracking-tight">
-            نجمع بين دقة <span className="text-brand-light">الطب</span> <br className="hidden md:block" /> 
-            وعبقرية <span className="text-brand-light">الهندسة</span>
+            {t('hero.title.part1')} <span className="text-brand-light">{t('hero.title.medicine')}</span> <br className="hidden md:block" /> 
+            {t('hero.title.part2')} <span className="text-brand-light">{t('hero.title.engineering')}</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-slate-300 mb-14 leading-relaxed max-w-2xl mx-auto font-medium">
-            تأسست MEDFITOUT لتكون الشريك الهندسي للأطباء والمستثمرين في القطاع الصحي.
+            {t('hero.subtitle')}
           </p>
           
-          <div className="flex flex-col sm:flex-row-reverse items-center justify-center gap-6 w-full sm:w-auto">
+          <div className={`flex flex-col sm:flex-row items-center justify-center gap-6 w-full sm:w-auto ${language === 'ar' ? 'sm:flex-row-reverse' : ''}`}>
             <button 
               onClick={() => onNavigate('contact')}
               className="w-full sm:w-auto px-14 py-6 bg-brand-light text-brand-dark rounded-2xl font-black text-xl hover:bg-white transition-all shadow-2xl shadow-brand-light/30 flex items-center justify-center gap-3 group"
             >
-              اطلب استشارة فوراً
-              <ArrowLeft className="group-hover:-translate-x-2 transition-transform" size={26} />
+              {t('hero.cta1')}
+              <ArrowLeft className={`group-hover:${language === 'ar' ? '-translate-x-2' : 'translate-x-2'} transition-transform ${language === 'en' ? 'rotate-180' : ''}`} size={26} />
             </button>
             <button 
               onClick={() => onNavigate('services')}
               className="w-full sm:w-auto px-14 py-6 bg-transparent text-white border-2 border-white/20 rounded-2xl font-extrabold text-xl hover:bg-white/10 transition-all flex items-center justify-center gap-3 backdrop-blur-sm"
             >
-              خدماتنا المتخصصة
+              {t('hero.cta2')}
             </button>
           </div>
 
           <div className="mt-20 flex flex-wrap justify-center gap-x-12 gap-y-6">
             <div className="flex items-center gap-3 text-white/70">
               <CheckCircle2 className="text-brand-light" size={22} />
-              <span className="text-lg font-bold text-center">دراسة مخططات هندسية</span>
+              <span className="text-lg font-bold text-center">{t('hero.feature1')}</span>
             </div>
             <div className="flex items-center gap-3 text-white/70">
               <CheckCircle2 className="text-brand-light" size={22} />
-              <span className="text-lg font-bold text-center">استشارات فنية مستقلة</span>
+              <span className="text-lg font-bold text-center">{t('hero.feature2')}</span>
             </div>
             <div className="flex items-center gap-3 text-white/70">
               <CheckCircle2 className="text-brand-light" size={22} />
-              <span className="text-lg font-bold text-center">حلول "تسليم مفتاح"</span>
+              <span className="text-lg font-bold text-center">{t('hero.feature3')}</span>
             </div>
           </div>
         </div>

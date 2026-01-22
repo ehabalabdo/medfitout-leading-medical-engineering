@@ -1,15 +1,18 @@
 
 import React from 'react';
 import { Target, Search } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const About: React.FC = () => {
+  const { t, language } = useLanguage();
+  
   return (
     <section id="about" className="py-32 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+        <div className={`grid grid-cols-1 lg:grid-cols-2 gap-20 items-center ${language === 'en' ? 'lg:grid-flow-col-dense' : ''}`}>
           
-          <div className="relative">
-            <div className="absolute -top-10 -right-10 w-72 h-72 bg-brand-light/10 rounded-full z-0"></div>
+          <div className={`relative ${language === 'en' ? 'lg:col-start-2' : ''}`}>
+            <div className={`absolute -top-10 ${language === 'ar' ? '-right-10' : '-left-10'} w-72 h-72 bg-brand-light/10 rounded-full z-0`}></div>
             <div className="relative z-10 grid grid-cols-2 gap-6">
               <div className="space-y-6">
                 <img 
@@ -34,33 +37,33 @@ const About: React.FC = () => {
             </div>
           </div>
 
-          <div className="text-right">
-            <div className="inline-block px-4 py-1 bg-brand-light/10 text-brand-dark font-bold rounded-lg mb-4">من نحن</div>
+          <div className={`${language === 'ar' ? 'text-right' : 'text-left'} ${language === 'en' ? 'lg:col-start-1' : ''}`}>
+            <div className="inline-block px-4 py-1 bg-brand-light/10 text-brand-dark font-bold rounded-lg mb-4">{t('about.badge')}</div>
             <h3 className="text-4xl md:text-5xl font-extrabold text-brand-dark mb-8 leading-tight">
-              MEDFITOUT: الريادة في الهندسة الطبية المتكاملة
+              {t('about.title')}
             </h3>
             <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-              نحن لسنا مجرد شركة تصميم داخلي أو مقاولات تقليدية؛ نحن شركة استشارات هندسية متخصصة تتقن لغة الطب والهندسة معاً. نهدف لسد الفجوة بين المتطلبات الطبية الدقيقة والتنفيذ الهندسي على أرض الواقع.
+              {t('about.description')}
             </p>
 
             <div className="grid gap-6">
-              <div className="flex gap-6 p-6 bg-slate-50 rounded-3xl border border-transparent hover:border-brand-light/20 transition-all">
+              <div className={`flex gap-6 p-6 bg-slate-50 rounded-3xl border border-transparent hover:border-brand-light/20 transition-all ${language === 'en' ? 'flex-row' : 'flex-row-reverse'}`}>
                 <div className="flex-shrink-0 bg-brand-dark p-4 rounded-2xl text-brand-light h-fit">
                   <Target size={28} />
                 </div>
                 <div>
-                  <h4 className="text-2xl font-bold text-brand-dark mb-2">رؤيتنا</h4>
-                  <p className="text-slate-600 text-lg">ضمان إنشاء عيادات ومراكز طبية حديثة، عملية، ومجدية اقتصادياً بأعلى المعايير العالمية.</p>
+                  <h4 className="text-2xl font-bold text-brand-dark mb-2">{t('about.vision.title')}</h4>
+                  <p className="text-slate-600 text-lg">{t('about.vision.description')}</p>
                 </div>
               </div>
 
-              <div className="flex gap-6 p-6 bg-slate-50 rounded-3xl border border-transparent hover:border-brand-light/20 transition-all">
+              <div className={`flex gap-6 p-6 bg-slate-50 rounded-3xl border border-transparent hover:border-brand-light/20 transition-all ${language === 'en' ? 'flex-row' : 'flex-row-reverse'}`}>
                 <div className="flex-shrink-0 bg-brand-dark p-4 rounded-2xl text-brand-light h-fit">
                   <Search size={28} />
                 </div>
                 <div>
-                  <h4 className="text-2xl font-bold text-brand-dark mb-2">دراسة الأجهزة الطبية</h4>
-                  <p className="text-slate-600 text-lg">نحن لا نبيع الأجهزة، بل نكون مستشارك الأمين لنخبرك أي جهاز هو الأنسب لاختصاصك وميزانيتك.</p>
+                  <h4 className="text-2xl font-bold text-brand-dark mb-2">{t('about.equipment.title')}</h4>
+                  <p className="text-slate-600 text-lg">{t('about.equipment.description')}</p>
                 </div>
               </div>
             </div>
