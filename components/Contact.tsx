@@ -193,19 +193,6 @@ const Contact: React.FC<ContactProps> = ({ onBack }) => {
               </div>
 
               <div className="space-y-4">
-                <button 
-                  type="submit" 
-                  disabled={status === 'sending'}
-                  className={`w-full py-6 rounded-[1.5rem] font-black text-xl flex items-center justify-center gap-4 transition-all shadow-xl ${
-                    status === 'success' 
-                      ? 'bg-green-500 text-white' 
-                      : 'bg-brand-dark text-white hover:bg-brand-light shadow-brand-dark/20'
-                  }`}
-                >
-                  {status === 'sending' ? 'جاري الإرسال...' : status === 'success' ? 'تم الإرسال بنجاح' : 'إرسال الطلب'}
-                  <Send size={24} className={status === 'sending' ? 'animate-pulse' : ''} />
-                </button>
-
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   <button
                     type="button"
