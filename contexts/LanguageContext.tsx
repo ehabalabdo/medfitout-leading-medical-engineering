@@ -220,6 +220,13 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.form.service8': 'Supervision of electromechanical installations',
     'contact.form.whatsapp': 'Send via WhatsApp',
     'contact.form.email': 'Send via Email',
+    'contact.form.alert': 'Please fill in the name, phone number and required service.',
+    'contact.form.whatsapp.greeting': 'Hello,',
+    'contact.form.whatsapp.text': 'I would like to book a technical consultation.',
+    'contact.form.whatsapp.name': 'Name:',
+    'contact.form.whatsapp.phone': 'Phone:',
+    'contact.form.whatsapp.service': 'Required Service:',
+    'contact.form.email.subject': 'Technical Consultation Request - MEDFITOUT',
     
     // Footer
     'footer.description': 'The engineering partner for establishing medical facilities. We master both medical and engineering languages.',
