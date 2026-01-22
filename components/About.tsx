@@ -13,8 +13,8 @@ const About: React.FC = () => {
             <div className="relative z-10 grid grid-cols-2 gap-6">
               <div className="space-y-6">
                 <img 
-                  src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=800" 
-                  alt="Medical Engineering Office" 
+                  src="https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&q=80&w=800" 
+                  alt="Medical Building Exterior" 
                   className="rounded-[2.5rem] shadow-2xl w-full h-80 object-cover transform translate-y-12"
                   loading="lazy"
                   width={800}
@@ -23,8 +23,8 @@ const About: React.FC = () => {
               </div>
               <div className="space-y-6">
                 <img 
-                  src="https://images.unsplash.com/photo-1504813184591-01572f98c85f?auto=format&fit=crop&q=80&w=800" 
-                  alt="Clinic Design Sketch" 
+                  src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=800" 
+                  alt="Medical Treatment Room" 
                   className="rounded-[2.5rem] shadow-2xl w-full h-80 object-cover"
                   loading="lazy"
                   width={800}
