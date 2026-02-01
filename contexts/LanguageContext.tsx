@@ -1,35 +1,4 @@
-    // SMM
-    'smm.title': 'التسويق عبر منصات التواصل',
-    'smm.subtitle': 'SMM',
-    'smm.description': 'نحوّل الحضور الرقمي من مجرد صفحات إلى قنوات بيع فعالة.',
-    'smm.feature1': 'بناء الاستراتيجية: اختيار المنصات الأنسب للجمهور المستهدف.',
-    'smm.feature2': 'صناعة المحتوى: إنتاج محتوى بصري وكتابي مبتكر يعكس هوية البراند.',
-    'smm.feature3': 'إدارة الحملات الممولة: استهداف دقيق لضمان أعلى عائد على الاستثمار (ROI).',
-    'smm.feature4': 'التفاعل والتحليل: مراقبة الأداء وتقديم تقارير دورية للتطوير.',
-
-    // Software Solutions
-    'software.title': 'الحلول البرمجية',
-    'software.subtitle': 'Software Solutions',
-    'software.description': 'أتمتة العمليات وتحويل الأفكار إلى أدوات رقمية ملموسة.',
-    'software.feature1': 'تطوير الويب والتطبيقات: بناء منصات سريعة، متوافقة مع الهواتف، وسهلة الاستخدام (UI/UX).',
-    'software.feature2': 'أنظمة إدارة الأعمال (ERP/CRM): حلول تقنية لتنظيم المبيعات والمخازن.',
-    'software.feature3': 'الصيانة والدعم الفني: ضمان استمرارية العمل بأعلى كفاءة وأمان.',
-  // SMM
-  'smm.title': 'Social Media Marketing',
-  'smm.subtitle': 'SMM',
-  'smm.description': 'We turn your digital presence from just "pages" into effective sales channels.',
-  'smm.feature1': 'Strategy: Choosing the best platforms for your target audience.',
-  'smm.feature2': 'Content Creation: Producing creative visual and written content that reflects your brand identity.',
-  'smm.feature3': 'Campaign Management: Precise targeting for the highest ROI.',
-  'smm.feature4': 'Engagement & Analytics: Monitoring performance and providing regular reports for improvement.',
-
-  // Software Solutions
-  'software.title': 'Software Solutions',
-  'software.subtitle': 'Software Solutions',
-  'software.description': 'Automate processes and turn ideas into tangible digital tools.',
-  'software.feature1': 'Web & App Development: Fast, mobile-friendly, and user-friendly platforms (UI/UX).',
-  'software.feature2': 'ERP/CRM Systems: Tech solutions to organize sales and inventory.',
-  'software.feature3': 'Maintenance & Support: Ensuring business continuity with maximum efficiency and security.',
+// ...existing code...
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 export type Language = 'ar' | 'en';
