@@ -95,8 +95,6 @@ const App: React.FC = () => {
 };
 
 export default App;
-          </>
-        )}
 
         {currentView === 'services' && (
           <div className="animate-fade-in">
