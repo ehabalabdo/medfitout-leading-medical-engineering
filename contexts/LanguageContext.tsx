@@ -66,6 +66,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.cta1': 'اطلب استشارة فوراً',
     'hero.cta2': 'خدماتنا المتخصصة',
     'hero.feature1': 'دراسة مخططات هندسية',
+        'contact.form.whatsapp.greeting': 'مرحباً،',
     'hero.feature2': 'استشارات فنية مستقلة',
     'hero.feature3': 'حلول "تسليم مفتاح"',
     
@@ -77,6 +78,7 @@ const translations: Record<Language, Record<string, string>> = {
     'about.vision.description': 'ضمان إنشاء عيادات ومراكز طبية حديثة، عملية، ومجدية اقتصادياً بأعلى المعايير العالمية.',
     'about.equipment.title': 'دراسة الأجهزة الطبية',
     'about.equipment.description': 'نحن لا نبيع الأجهزة، بل نكون مستشارك الأمين لنخبرك أي جهاز هو الأنسب لاختصاصك وميزانيتك.',
+        'contact.form.whatsapp.greeting': 'Hello,',
     
     // Services
     'services.back': 'العودة للرئيسية',
