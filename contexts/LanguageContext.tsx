@@ -1,6 +1,4 @@
 // ...existing code...
-  'contact.form.whatsapp.text': 'الاسم: {name}\nرقم الهاتف: {phone}\nالخدمة المطلوبة: {service}',
-  'contact.form.whatsapp.text': 'Name: {name}\nPhone: {phone}\nService: {service}',
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 export type Language = 'ar' | 'en';
