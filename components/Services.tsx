@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ClipboardCheck, Layout, Settings2, ShieldCheck, ArrowRight } from 'lucide-react';
+import { ClipboardCheck, Layout, Settings2, ShieldCheck, ArrowRight, Globe, MonitorSmartphone } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 interface ServicesProps {
@@ -43,6 +43,31 @@ const Services: React.FC<ServicesProps> = ({ onBack }) => {
         "services.service3.feature3",
         "services.service3.feature4"
       ]
+    },
+    // SMM Service
+    {
+      titleKey: "smm.title",
+      subtitleKey: "smm.subtitle",
+      icon: <Globe size={36} />,
+      descriptionKey: "smm.description",
+      featureKeys: [
+        "smm.feature1",
+        "smm.feature2",
+        "smm.feature3",
+        "smm.feature4"
+      ]
+    },
+    // Software Solutions Service
+    {
+      titleKey: "software.title",
+      subtitleKey: "software.subtitle",
+      icon: <MonitorSmartphone size={36} />,
+      descriptionKey: "software.description",
+      featureKeys: [
+        "software.feature1",
+        "software.feature2",
+        "software.feature3"
+      ]
     }
   ];
 
@@ -68,10 +93,12 @@ const Services: React.FC<ServicesProps> = ({ onBack }) => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {services.map((service) => (
-            <div 
-              key={service.titleKey} 
+          {services.map((service, idx) => (
+            <div
+              key={service.titleKey}
               className={`bg-white rounded-[3rem] p-10 shadow-xl shadow-slate-200/50 hover:shadow-2xl hover:shadow-brand-light/10 transition-all duration-500 border border-slate-100 group hover:-translate-y-3 ${language === 'ar' ? 'text-right' : 'text-left'} flex flex-col h-full`}
+              data-aos="fade-up"
+              data-aos-delay={idx * 100}
             >
               <div className="w-20 h-20 bg-brand-light/10 text-brand-dark rounded-2xl flex items-center justify-center mb-8 group-hover:bg-brand-dark group-hover:text-brand-light transition-all duration-300">
                 {service.icon}
@@ -79,7 +106,6 @@ const Services: React.FC<ServicesProps> = ({ onBack }) => {
               <h4 className="text-2xl font-black text-brand-dark mb-2">{t(service.titleKey)}</h4>
               <p className="text-brand-light font-bold text-sm tracking-wider uppercase mb-6">{t(service.subtitleKey)}</p>
               <p className="text-slate-600 text-lg mb-8 leading-relaxed">{t(service.descriptionKey)}</p>
-              
               <ul className="space-y-4 mt-auto">
                 {service.featureKeys.map((featureKey, fIndex) => (
                   <li key={fIndex} className={`flex items-start gap-4 text-slate-700 font-medium ${language === 'en' ? 'flex-row' : 'flex-row-reverse'}`}>
