@@ -1,3 +1,19 @@
+  // Social Media Marketing
+  'services.smm.title': 'التسويق على مواقع التواصل الاجتماعي (إدارة شاملة)',
+  'services.smm.subtitle': 'SMM',
+  'services.smm.description': 'نركز على بناء حضور رقمي قوي للمراكز الطبية عبر (Instagram, Facebook, Google):',
+  'services.smm.feature1': 'إدارة الصفحات: جدولة المنشورات، التفاعل مع استفسارات المرضى، وتحسين صورة العيادة.',
+  'services.smm.feature2': 'إنشاء المحتوى البصري: تصميم "جرافيك ديزاين" احترافي يعكس نظافة واحترافية المركز الطبي.',
+  'services.smm.feature3': 'التصوير والمونتاج: إنتاج فيديوهات (Reels) وتصوير واقعي للعيادة والأطباء لزيادة المصداقية.',
+  'services.smm.feature4': 'الخطط التسويقية: رسم خارطة طريق شهرية تضمن الوصول للجمهور المستهدف وتحويل المتابعين إلى مراجعين حقيقيين.',
+
+  // Software Solutions
+  'services.software.title': 'الحلول البرمجية (الأتمتة والأنظمة)',
+  'services.software.subtitle': 'Software Solutions',
+  'services.software.description': 'تحويل العيادة إلى "عيادة ذكية" لتقليل الجهد البشري وزيادة الكفاءة:',
+  'services.software.feature1': 'أنظمة إدارة العيادات: سجلات طبية رقمية وحلول برمجية مخصصة لتنظيم المواعيد.',
+  'services.software.feature2': 'الربط الذكي والأتمتة: ربط العمليات ببرامج الأتمتة (مثل n8n و WhatsApp API) لتأكيد المواعيد آلياً.',
+  'services.software.feature3': 'تطوير الويب: إنشاء مواقع تعريفية تتيح للمرضى الحجز المباشر عبر الإنترنت.',
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 export type Language = 'ar' | 'en';
