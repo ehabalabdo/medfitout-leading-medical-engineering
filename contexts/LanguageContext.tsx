@@ -1,4 +1,3 @@
-// ...existing code...
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 export type Language = 'ar' | 'en';
@@ -51,22 +50,22 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.feature2': 'استشارات فنية مستقلة',
     'hero.feature3': 'حلول "تسليم مفتاح"',
     
-    // SMM
-    'smm.title': 'التسويق على مواقع التواصل الاجتماعي (إدارة شاملة)',
-    'smm.subtitle': 'SMM',
-    'smm.description': 'نركز على بناء حضور رقمي قوي للمراكز الطبية عبر (Instagram, Facebook, Google):',
-    'smm.feature1': 'إدارة الصفحات: جدولة المنشورات، التفاعل مع استفسارات المرضى، وتحسين صورة العيادة.',
-    'smm.feature2': 'إنشاء المحتوى البصري: تصميم "جرافيك ديزاين" احترافي يعكس نظافة واحترافية المركز الطبي.',
-    'smm.feature3': 'التصوير والمونتاج: إنتاج فيديوهات (Reels) وتصوير واقعي للعيادة والأطباء لزيادة المصداقية.',
-    'smm.feature4': 'الخطط التسويقية: رسم خارطة طريق شهرية تضمن الوصول للجمهور المستهدف وتحويل المتابعين إلى مراجعين حقيقيين.',
-
-    // Software Solutions
-    'software.title': 'الحلول البرمجية (الأتمتة والأنظمة)',
-    'software.subtitle': 'Software Solutions',
-    'software.description': 'تحويل العيادة إلى "عيادة ذكية" لتقليل الجهد البشري وزيادة الكفاءة:',
-    'software.feature1': 'أنظمة إدارة العيادات: سجلات طبية رقمية وحلول برمجية مخصصة لتنظيم المواعيد.',
-    'software.feature2': 'الربط الذكي والأتمتة: ربط العمليات ببرامج الأتمتة (مثل n8n و WhatsApp API) لتأكيد المواعيد آلياً.',
-    'software.feature3': 'تطوير الويب: إنشاء مواقع تعريفية تتيح للمرضى الحجز المباشر عبر الإنترنت.',
+    // About
+    'about.badge': 'من نحن',
+    'about.title': 'MEDFITOUT: الريادة في الهندسة الطبية المتكاملة',
+    'about.description': 'نحن لسنا مجرد شركة تصميم داخلي أو مقاولات تقليدية؛ نحن شركة استشارات هندسية متخصصة تتقن لغة الطب والهندسة معاً. نهدف لسد الفجوة بين المتطلبات الطبية الدقيقة والتنفيذ الهندسي على أرض الواقع.',
+    'about.vision.title': 'رؤيتنا',
+    'about.vision.description': 'ضمان إنشاء عيادات ومراكز طبية حديثة، عملية، ومجدية اقتصادياً بأعلى المعايير العالمية.',
+    'about.equipment.title': 'دراسة الأجهزة الطبية',
+    'about.equipment.description': 'نحن لا نبيع الأجهزة، بل نكون مستشارك الأمين لنخبرك أي جهاز هو الأنسب لاختصاصك وميزانيتك.',
+    
+    // Services
+    'services.back': 'العودة للرئيسية',
+    'services.badge': 'خدماتنا',
+    'services.title': 'حلول شاملة ومتكاملة',
+    'services.description': 'ندرك التحديات التي يواجهها الطبيب عند التأسيس، لذا نقدم خدمات متكاملة تغطي كافة الجوانب الفنية والهندسية.',
+    'services.service1.title': 'استشارات ما قبل التأسيس',
+    'services.service1.subtitle': 'Technical Consultancy',
     'services.service1.description': 'نساعدك في البداية الصحيحة لتجنب الأخطاء المكلفة لاحقاً.',
     'services.service1.feature1': 'دراسة العروض الفنية للأجهزة الطبية',
     'services.service1.feature2': 'مستشارك الأمين لاختيار الأجهزة الأنسب لميزانيتك',
@@ -148,22 +147,22 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.feature2': 'Independent Technical Consulting',
     'hero.feature3': 'Turnkey Solutions',
     
-    // SMM
-    'smm.title': 'Social Media Marketing (Comprehensive Management)',
-    'smm.subtitle': 'SMM',
-    'smm.description': 'We focus on building a strong digital presence for medical centers via (Instagram, Facebook, Google):',
-    'smm.feature1': 'Page Management: Scheduling posts, responding to patient inquiries, and improving clinic image.',
-    'smm.feature2': 'Visual Content Creation: Professional graphic design reflecting the cleanliness and professionalism of the medical center.',
-    'smm.feature3': 'Photography & Editing: Producing Reels and real-life videos of the clinic and doctors to boost credibility.',
-    'smm.feature4': 'Marketing Plans: Monthly roadmaps to reach the target audience and convert followers into real patients.',
-
-    // Software Solutions
-    'software.title': 'Software Solutions (Automation & Systems)',
-    'software.subtitle': 'Software Solutions',
-    'software.description': 'Transform your clinic into a "smart clinic" to reduce manual effort and increase efficiency:',
-    'software.feature1': 'Clinic Management Systems: Digital medical records and custom software for appointment organization.',
-    'software.feature2': 'Smart Integration & Automation: Connect operations with automation tools (like n8n and WhatsApp API) for automatic appointment confirmations.',
-    'software.feature3': 'Web Development: Create informative websites allowing patients to book directly online.',
+    // About
+    'about.badge': 'About Us',
+    'about.title': 'MEDFITOUT: Leadership in Integrated Medical Engineering',
+    'about.description': 'We are not just an interior design or traditional contracting company; we are a specialized engineering consultancy that masters both medical and engineering languages. We aim to bridge the gap between precise medical requirements and practical engineering execution.',
+    'about.vision.title': 'Our Vision',
+    'about.vision.description': 'Ensuring the establishment of modern, functional, and economically viable clinics and medical centers with the highest international standards.',
+    'about.equipment.title': 'Medical Equipment Study',
+    'about.equipment.description': 'We do not sell equipment, but rather be your trusted advisor to tell you which device is best suited for your specialty and budget.',
+    
+    // Services
+    'services.back': 'Back to Home',
+    'services.badge': 'Our Services',
+    'services.title': 'Comprehensive and Integrated Solutions',
+    'services.description': 'We understand the challenges doctors face during establishment, so we provide integrated services covering all technical and engineering aspects.',
+    'services.service1.title': 'Pre-Establishment Consulting',
+    'services.service1.subtitle': 'Technical Consultancy',
     'services.service1.description': 'We help you start correctly to avoid costly mistakes later.',
     'services.service1.feature1': 'Technical evaluation of medical equipment proposals',
     'services.service1.feature2': 'Your trusted advisor for choosing the most suitable equipment for your budget',
@@ -221,13 +220,6 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.form.service8': 'Supervision of electromechanical installations',
     'contact.form.whatsapp': 'Send via WhatsApp',
     'contact.form.email': 'Send via Email',
-    'contact.form.alert': 'Please fill in the name, phone number and required service.',
-    'contact.form.whatsapp.greeting': 'Hello,',
-    'contact.form.whatsapp.text': 'I would like to book a technical consultation.',
-    'contact.form.whatsapp.name': 'Name:',
-    'contact.form.whatsapp.phone': 'Phone:',
-    'contact.form.whatsapp.service': 'Required Service:',
-    'contact.form.email.subject': 'Technical Consultation Request - MEDFITOUT',
     
     // Footer
     'footer.description': 'The engineering partner for establishing medical facilities. We master both medical and engineering languages.',
