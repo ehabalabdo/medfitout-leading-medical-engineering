@@ -92,7 +92,7 @@ const Services: React.FC<ServicesProps> = ({ onBack }) => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className={`grid gap-10 ${services.length <= 2 ? 'grid-cols-1' : services.length === 4 ? 'md:grid-cols-2 lg:grid-cols-4' : services.length === 5 ? 'md:grid-cols-2 lg:grid-cols-5' : 'md:grid-cols-2 lg:grid-cols-3'}` }>
           {services.map((service) => (
             <div 
               key={service.titleKey} 
