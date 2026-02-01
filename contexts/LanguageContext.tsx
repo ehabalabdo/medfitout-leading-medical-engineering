@@ -1,19 +1,4 @@
-  // Social Media Marketing
-  'services.smm.title': 'التسويق على مواقع التواصل الاجتماعي (إدارة شاملة)',
-  'services.smm.subtitle': 'SMM',
-  'services.smm.description': 'نركز على بناء حضور رقمي قوي للمراكز الطبية عبر (Instagram, Facebook, Google):',
-  'services.smm.feature1': 'إدارة الصفحات: جدولة المنشورات، التفاعل مع استفسارات المرضى، وتحسين صورة العيادة.',
-  'services.smm.feature2': 'إنشاء المحتوى البصري: تصميم "جرافيك ديزاين" احترافي يعكس نظافة واحترافية المركز الطبي.',
-  'services.smm.feature3': 'التصوير والمونتاج: إنتاج فيديوهات (Reels) وتصوير واقعي للعيادة والأطباء لزيادة المصداقية.',
-  'services.smm.feature4': 'الخطط التسويقية: رسم خارطة طريق شهرية تضمن الوصول للجمهور المستهدف وتحويل المتابعين إلى مراجعين حقيقيين.',
-
-  // Software Solutions
-  'services.software.title': 'الحلول البرمجية (الأتمتة والأنظمة)',
-  'services.software.subtitle': 'Software Solutions',
-  'services.software.description': 'تحويل العيادة إلى "عيادة ذكية" لتقليل الجهد البشري وزيادة الكفاءة:',
-  'services.software.feature1': 'أنظمة إدارة العيادات: سجلات طبية رقمية وحلول برمجية مخصصة لتنظيم المواعيد.',
-  'services.software.feature2': 'الربط الذكي والأتمتة: ربط العمليات ببرامج الأتمتة (مثل n8n و WhatsApp API) لتأكيد المواعيد آلياً.',
-  'services.software.feature3': 'تطوير الويب: إنشاء مواقع تعريفية تتيح للمرضى الحجز المباشر عبر الإنترنت.',
+// ...existing code...
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 export type Language = 'ar' | 'en';
@@ -168,10 +153,42 @@ const translations: Record<Language, Record<string, string>> = {
   },
   en: {
     // Social Media Marketing
+    // Social Media Marketing
+    'services.smm.title': 'التسويق على مواقع التواصل الاجتماعي (إدارة شاملة)',
+    'services.smm.subtitle': 'SMM',
+    'services.smm.description': 'نركز على بناء حضور رقمي قوي للمراكز الطبية عبر (Instagram, Facebook, Google):',
+    'services.smm.feature1': 'إدارة الصفحات: جدولة المنشورات، التفاعل مع استفسارات المرضى، وتحسين صورة العيادة.',
+    'services.smm.feature2': 'إنشاء المحتوى البصري: تصميم "جرافيك ديزاين" احترافي يعكس نظافة واحترافية المركز الطبي.',
+    'services.smm.feature3': 'التصوير والمونتاج: إنتاج فيديوهات (Reels) وتصوير واقعي للعيادة والأطباء لزيادة المصداقية.',
+    'services.smm.feature4': 'الخطط التسويقية: رسم خارطة طريق شهرية تضمن الوصول للجمهور المستهدف وتحويل المتابعين إلى مراجعين حقيقيين.',
+
+    // Software Solutions
+    'services.software.title': 'الحلول البرمجية (الأتمتة والأنظمة)',
+    'services.software.subtitle': 'Software Solutions',
+    'services.software.description': 'تحويل العيادة إلى "عيادة ذكية" لتقليل الجهد البشري وزيادة الكفاءة:',
+    'services.software.feature1': 'أنظمة إدارة العيادات: سجلات طبية رقمية وحلول برمجية مخصصة لتنظيم المواعيد.',
+    'services.software.feature2': 'الربط الذكي والأتمتة: ربط العمليات ببرامج الأتمتة (مثل n8n و WhatsApp API) لتأكيد المواعيد آلياً.',
+    'services.software.feature3': 'تطوير الويب: إنشاء مواقع تعريفية تتيح للمرضى الحجز المباشر عبر الإنترنت.',
     'services.smm.title': 'Social Media Marketing (Comprehensive Management)',
     'services.smm.subtitle': 'SMM',
     'services.smm.description': 'We focus on building a strong digital presence for medical centers via (Instagram, Facebook, Google):',
     'services.smm.feature1': 'Page management: scheduling posts, interacting with patient inquiries, and improving the clinic’s image.',
+    // Social Media Marketing
+    'services.smm.title': 'Social Media Marketing (Comprehensive Management)',
+    'services.smm.subtitle': 'SMM',
+    'services.smm.description': 'We focus on building a strong digital presence for medical centers via (Instagram, Facebook, Google):',
+    'services.smm.feature1': 'Page management: scheduling posts, interacting with patient inquiries, and improving the clinic’s image.',
+    'services.smm.feature2': 'Visual content creation: professional graphic design reflecting the cleanliness and professionalism of the medical center.',
+    'services.smm.feature3': 'Photography and editing: producing Reels videos and real-life shoots of the clinic and doctors to increase credibility.',
+    'services.smm.feature4': 'Marketing plans: drawing a monthly roadmap to reach the target audience and convert followers into real patients.',
+
+    // Software Solutions
+    'services.software.title': 'Software Solutions (Automation & Systems)',
+    'services.software.subtitle': 'Software Solutions',
+    'services.software.description': 'Transform your clinic into a “smart clinic” to reduce manual effort and increase efficiency:',
+    'services.software.feature1': 'Clinic management systems: digital medical records and custom software solutions for appointment organization.',
+    'services.software.feature2': 'Smart integration & automation: connect operations with automation tools (like n8n and WhatsApp API) for automatic appointment confirmation.',
+    'services.software.feature3': 'Web development: create informative websites that allow patients to book directly online.',
     'services.smm.feature2': 'Visual content creation: professional graphic design reflecting the cleanliness and professionalism of the medical center.',
     'services.smm.feature3': 'Photography and editing: producing Reels videos and real-life shoots of the clinic and doctors to increase credibility.',
     'services.smm.feature4': 'Marketing plans: drawing a monthly roadmap to reach the target audience and convert followers into real patients.',
