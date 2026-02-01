@@ -11,7 +11,9 @@ const Services: React.FC<ServicesProps> = ({ onBack }) => {
   const { t, language } = useLanguage();
   
   const services = [
-        // التسويق على مواقع التواصل الاجتماعي
+        // ...existing code for the 3 main services...
+        // ...existing code for the 3 main services...
+        // التسويق على مواقع التواصل الاجتماعي (آخر عنصر)
         {
           titleKey: "services.smm.title",
           subtitleKey: "services.smm.subtitle",
@@ -24,7 +26,7 @@ const Services: React.FC<ServicesProps> = ({ onBack }) => {
             "services.smm.feature4"
           ]
         },
-        // الحلول البرمجية
+        // الحلول البرمجية (آخر عنصر)
         {
           titleKey: "services.software.title",
           subtitleKey: "services.software.subtitle",
@@ -35,7 +37,7 @@ const Services: React.FC<ServicesProps> = ({ onBack }) => {
             "services.software.feature2",
             "services.software.feature3"
           ]
-        },
+        }
     {
       titleKey: "services.service1.title",
       subtitleKey: "services.service1.subtitle",
