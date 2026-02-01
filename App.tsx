@@ -1,5 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { MessageCircle } from 'lucide-react';
 import { LanguageProvider, useLanguage } from './contexts/LanguageContext';
 import Navbar from './components/Navbar';
@@ -31,6 +33,9 @@ const AppContent: React.FC = () => {
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll();
+
+    // تفعيل مكتبة AOS
+    AOS.init({ once: true, duration: 800 });
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
