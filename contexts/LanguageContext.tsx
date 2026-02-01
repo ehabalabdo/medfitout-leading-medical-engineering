@@ -64,7 +64,6 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.cta1': 'اطلب استشارة فوراً',
     'hero.cta2': 'خدماتنا المتخصصة',
     'hero.feature1': 'دراسة مخططات هندسية',
-        'contact.form.whatsapp.greeting': 'مرحباً،',
     'hero.feature2': 'استشارات فنية مستقلة',
     'hero.feature3': 'حلول "تسليم مفتاح"',
     
@@ -76,7 +75,8 @@ const translations: Record<Language, Record<string, string>> = {
     'about.vision.description': 'ضمان إنشاء عيادات ومراكز طبية حديثة، عملية، ومجدية اقتصادياً بأعلى المعايير العالمية.',
     'about.equipment.title': 'دراسة الأجهزة الطبية',
     'about.equipment.description': 'نحن لا نبيع الأجهزة، بل نكون مستشارك الأمين لنخبرك أي جهاز هو الأنسب لاختصاصك وميزانيتك.',
-        'contact.form.whatsapp.greeting': 'Hello,',
+      'contact.form.whatsapp.text': '{name}\n{phone}\n{service}',
+      'contact.form.whatsapp.greeting': 'مرحباً،',
     
     // Services
     'services.back': 'العودة للرئيسية',
@@ -154,6 +154,8 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.contact.direct': 'تواصل مباشر',
   },
   en: {
+      'contact.form.whatsapp.text': '{name}\n{phone}\n{service}',
+      'contact.form.whatsapp.greeting': 'Hello,',
     // Social Media Marketing
     // Social Media Marketing
     'services.smm.title': 'التسويق على مواقع التواصل الاجتماعي (إدارة شاملة)',
