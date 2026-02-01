@@ -51,22 +51,23 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.feature2': 'استشارات فنية مستقلة',
     'hero.feature3': 'حلول "تسليم مفتاح"',
     
-    // About
-    'about.badge': 'من نحن',
-    'about.title': 'MEDFITOUT: الريادة في الهندسة الطبية المتكاملة',
-    'about.description': 'نحن لسنا مجرد شركة تصميم داخلي أو مقاولات تقليدية؛ نحن شركة استشارات هندسية متخصصة تتقن لغة الطب والهندسة معاً. نهدف لسد الفجوة بين المتطلبات الطبية الدقيقة والتنفيذ الهندسي على أرض الواقع.',
-    'about.vision.title': 'رؤيتنا',
-    'about.vision.description': 'ضمان إنشاء عيادات ومراكز طبية حديثة، عملية، ومجدية اقتصادياً بأعلى المعايير العالمية.',
-    'about.equipment.title': 'دراسة الأجهزة الطبية',
-    'about.equipment.description': 'نحن لا نبيع الأجهزة، بل نكون مستشارك الأمين لنخبرك أي جهاز هو الأنسب لاختصاصك وميزانيتك.',
-    
-    // Services
-    'services.back': 'العودة للرئيسية',
-    'services.badge': 'خدماتنا',
-    'services.title': 'حلول شاملة ومتكاملة',
-    'services.description': 'ندرك التحديات التي يواجهها الطبيب عند التأسيس، لذا نقدم خدمات متكاملة تغطي كافة الجوانب الفنية والهندسية.',
-    'services.service1.title': 'استشارات ما قبل التأسيس',
-    'services.service1.subtitle': 'Technical Consultancy',
+    // SMM
+    'smm.title': 'التسويق عبر منصات التواصل الاجتماعي (SMM)',
+    'smm.subtitle': 'SMM',
+    'smm.description': 'نحول الحضور الرقمي لعملائك من مجرد "صفحات" إلى قنوات بيع فعالة.',
+    'smm.feature1': 'بناء الاستراتيجية: اختيار المنصات الأنسب للجمهور المستهدف.',
+    'smm.feature2': 'صناعة المحتوى: إنتاج محتوى بصري وكتابي مبتكر يعكس هوية البراند.',
+    'smm.feature3': 'إدارة الحملات الممولة: استهداف دقيق لضمان أعلى عائد على الاستثمار (ROI).',
+    'smm.feature4': 'التفاعل والتحليل: مراقبة الأداء وتقديم تقارير دورية للتطوير.',
+
+    // Software Solutions
+    'software.title': 'الحلول البرمجية (Software Solutions)',
+    'software.subtitle': 'Software Solutions',
+    'software.description': 'أتمتة العمليات وتحويل الأفكار إلى أدوات رقمية ملموسة.',
+    'software.feature1': 'تطوير الويب والتطبيقات: بناء منصات سريعة، متوافقة مع الهواتف، وسهلة الاستخدام (UI/UX).',
+    'software.feature2': 'أنظمة إدارة الأعمال (ERP/CRM): توفير حلول تقنية لتنظيم المبيعات والمخازن.',
+    'software.feature3': 'تكامل الأنظمة (API Integration): ربط الأدوات المختلفة (مثل WhatsApp Business و n8n) لتسهيل سير العمل.',
+    'software.feature4': 'الصيانة والدعم الفني: ضمان استمرارية العمل بأعلى كفاءة وأمان.',
     'services.service1.description': 'نساعدك في البداية الصحيحة لتجنب الأخطاء المكلفة لاحقاً.',
     'services.service1.feature1': 'دراسة العروض الفنية للأجهزة الطبية',
     'services.service1.feature2': 'مستشارك الأمين لاختيار الأجهزة الأنسب لميزانيتك',
@@ -148,22 +149,23 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.feature2': 'Independent Technical Consulting',
     'hero.feature3': 'Turnkey Solutions',
     
-    // About
-    'about.badge': 'About Us',
-    'about.title': 'MEDFITOUT: Leadership in Integrated Medical Engineering',
-    'about.description': 'We are not just an interior design or traditional contracting company; we are a specialized engineering consultancy that masters both medical and engineering languages. We aim to bridge the gap between precise medical requirements and practical engineering execution.',
-    'about.vision.title': 'Our Vision',
-    'about.vision.description': 'Ensuring the establishment of modern, functional, and economically viable clinics and medical centers with the highest international standards.',
-    'about.equipment.title': 'Medical Equipment Study',
-    'about.equipment.description': 'We do not sell equipment, but rather be your trusted advisor to tell you which device is best suited for your specialty and budget.',
-    
-    // Services
-    'services.back': 'Back to Home',
-    'services.badge': 'Our Services',
-    'services.title': 'Comprehensive and Integrated Solutions',
-    'services.description': 'We understand the challenges doctors face during establishment, so we provide integrated services covering all technical and engineering aspects.',
-    'services.service1.title': 'Pre-Establishment Consulting',
-    'services.service1.subtitle': 'Technical Consultancy',
+    // SMM
+    'smm.title': 'Social Media Marketing (SMM)',
+    'smm.subtitle': 'SMM',
+    'smm.description': 'We turn your clients’ digital presence from just "pages" into effective sales channels.',
+    'smm.feature1': 'Strategy: Choosing the best platforms for your target audience.',
+    'smm.feature2': 'Content Creation: Producing creative visual and written content that reflects your brand identity.',
+    'smm.feature3': 'Campaign Management: Precise targeting for the highest ROI.',
+    'smm.feature4': 'Engagement & Analytics: Monitoring performance and providing regular reports for improvement.',
+
+    // Software Solutions
+    'software.title': 'Software Solutions',
+    'software.subtitle': 'Software Solutions',
+    'software.description': 'Automate processes and turn ideas into tangible digital tools.',
+    'software.feature1': 'Web & App Development: Fast, mobile-friendly, and user-friendly platforms (UI/UX).',
+    'software.feature2': 'ERP/CRM Systems: Providing tech solutions to organize sales and inventory.',
+    'software.feature3': 'API Integration: Connecting different tools (like WhatsApp Business and n8n) to streamline workflow.',
+    'software.feature4': 'Maintenance & Support: Ensuring business continuity with maximum efficiency and security.',
     'services.service1.description': 'We help you start correctly to avoid costly mistakes later.',
     'services.service1.feature1': 'Technical evaluation of medical equipment proposals',
     'services.service1.feature2': 'Your trusted advisor for choosing the most suitable equipment for your budget',

@@ -66,7 +66,8 @@ const Services: React.FC<ServicesProps> = ({ onBack }) => {
       featureKeys: [
         "software.feature1",
         "software.feature2",
-        "software.feature3"
+        "software.feature3",
+        "software.feature4"
       ]
     }
   ];
