@@ -2,5 +2,5 @@
   لتغيير شكل الماوس إلى رمز طبي، يمكنك استبدال الرابط أدناه بصورة طبية (png أو svg) في مجلد public، أو استخدام هذا المثال الافتراضي.
 */
 body {
-  cursor: url('/public/medical-cursor.png'), auto;
+  cursor: url('/medical-cursor.png'), auto;
 }
