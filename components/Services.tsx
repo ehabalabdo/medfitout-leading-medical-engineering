@@ -97,7 +97,7 @@ const Services: React.FC<ServicesProps> = ({ onBack }) => {
             <div 
               key={service.titleKey} 
               className={`bg-white rounded-[3rem] p-10 shadow-xl shadow-slate-200/50 hover:shadow-2xl hover:shadow-brand-light/10 transition-all duration-500 border border-slate-100 group hover:-translate-y-3 ${language === 'ar' ? 'text-right' : 'text-left'} flex flex-col h-full`}
-            style={{minHeight: '420px', display: 'flex', flexDirection: 'column'}}>
+            style={{display: 'flex', flexDirection: 'column'}}>
               <div className="w-20 h-20 bg-brand-light/10 text-brand-dark rounded-2xl flex items-center justify-center mb-8 group-hover:bg-brand-dark group-hover:text-brand-light transition-all duration-300">
                 {service.icon}
               </div>
