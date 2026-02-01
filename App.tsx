@@ -59,6 +59,7 @@ const AppContent: React.FC = () => {
         )}
 
         {currentView === 'services' && (
+
           <div className="animate-fade-in">
             <Services onBack={() => navigateTo('main')} />
           </div>
@@ -84,7 +85,7 @@ const AppContent: React.FC = () => {
       <Footer />
     </div>
   );
-};
+}
 
 const App: React.FC = () => {
   return (
@@ -92,7 +93,7 @@ const App: React.FC = () => {
       <AppContent />
     </LanguageProvider>
   );
-};
+}
 
 export default App;
 
