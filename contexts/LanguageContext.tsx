@@ -54,6 +54,22 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
 
 const translations: Record<Language, Record<string, string>> = {
   ar: {
+    // Social Media Marketing
+    'services.smm.title': 'التسويق على مواقع التواصل الاجتماعي (إدارة شاملة)',
+    'services.smm.subtitle': 'SMM',
+    'services.smm.description': 'نركز على بناء حضور رقمي قوي للمراكز الطبية عبر (Instagram, Facebook, Google):',
+    'services.smm.feature1': 'إدارة الصفحات: جدولة المنشورات، التفاعل مع استفسارات المرضى، وتحسين صورة العيادة.',
+    'services.smm.feature2': 'إنشاء المحتوى البصري: تصميم "جرافيك ديزاين" احترافي يعكس نظافة واحترافية المركز الطبي.',
+    'services.smm.feature3': 'التصوير والمونتاج: إنتاج فيديوهات (Reels) وتصوير واقعي للعيادة والأطباء لزيادة المصداقية.',
+    'services.smm.feature4': 'الخطط التسويقية: رسم خارطة طريق شهرية تضمن الوصول للجمهور المستهدف وتحويل المتابعين إلى مراجعين حقيقيين.',
+
+    // Software Solutions
+    'services.software.title': 'الحلول البرمجية (الأتمتة والأنظمة)',
+    'services.software.subtitle': 'Software Solutions',
+    'services.software.description': 'تحويل العيادة إلى "عيادة ذكية" لتقليل الجهد البشري وزيادة الكفاءة:',
+    'services.software.feature1': 'أنظمة إدارة العيادات: سجلات طبية رقمية وحلول برمجية مخصصة لتنظيم المواعيد.',
+    'services.software.feature2': 'الربط الذكي والأتمتة: ربط العمليات ببرامج الأتمتة (مثل n8n و WhatsApp API) لتأكيد المواعيد آلياً.',
+    'services.software.feature3': 'تطوير الويب: إنشاء مواقع تعريفية تتيح للمرضى الحجز المباشر عبر الإنترنت.',
     // Hero
     'hero.title.part1': 'نجمع بين دقة',
     'hero.title.medicine': 'الطب',
@@ -64,28 +80,6 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.cta2': 'خدماتنا المتخصصة',
     'hero.feature1': 'دراسة مخططات هندسية',
     'hero.feature2': 'استشارات فنية مستقلة',
-        smm: {
-          title: "Social Media Marketing (SMM)",
-          subtitle: "Digital Marketing",
-          description:
-            "Specialized marketing solutions for medical clinics to increase your online presence and attract more patients.",
-          points: [
-            "Content creation and management for social media platforms",
-            "Targeted advertising campaigns for medical services",
-            "Reputation management and patient engagement",
-          ],
-        },
-        softwareSolutions: {
-          title: "Software Solutions",
-          subtitle: "Medical Software Solutions",
-          description:
-            "Custom software solutions to streamline clinic operations and enhance patient care.",
-          points: [
-            "Clinic management systems and electronic medical records",
-            "Online appointment booking and patient portals",
-            "Integration with medical devices and analytics",
-          ],
-        },
     'hero.feature3': 'حلول "تسليم مفتاح"',
     
     // About
@@ -173,6 +167,22 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.contact.direct': 'تواصل مباشر',
   },
   en: {
+    // Social Media Marketing
+    'services.smm.title': 'Social Media Marketing (Comprehensive Management)',
+    'services.smm.subtitle': 'SMM',
+    'services.smm.description': 'We focus on building a strong digital presence for medical centers via (Instagram, Facebook, Google):',
+    'services.smm.feature1': 'Page management: scheduling posts, interacting with patient inquiries, and improving the clinic’s image.',
+    'services.smm.feature2': 'Visual content creation: professional graphic design reflecting the cleanliness and professionalism of the medical center.',
+    'services.smm.feature3': 'Photography and editing: producing Reels videos and real-life shoots of the clinic and doctors to increase credibility.',
+    'services.smm.feature4': 'Marketing plans: drawing a monthly roadmap to reach the target audience and convert followers into real patients.',
+
+    // Software Solutions
+    'services.software.title': 'Software Solutions (Automation & Systems)',
+    'services.software.subtitle': 'Software Solutions',
+    'services.software.description': 'Transform your clinic into a “smart clinic” to reduce manual effort and increase efficiency:',
+    'services.software.feature1': 'Clinic management systems: digital medical records and custom software solutions for appointment organization.',
+    'services.software.feature2': 'Smart integration & automation: connect operations with automation tools (like n8n and WhatsApp API) for automatic appointment confirmation.',
+    'services.software.feature3': 'Web development: create informative websites that allow patients to book directly online.',
     // Hero
     'hero.title.part1': 'Combining precision of',
     'hero.title.medicine': 'Medicine',
