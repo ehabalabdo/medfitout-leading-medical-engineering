@@ -56,11 +56,10 @@ const Contact: React.FC<ContactProps> = ({ onBack }) => {
 
   const buildMessageLines = (fields: { fullName: string; phone: string; service: string }) => [
     t('contact.form.whatsapp.greeting'),
-    t('contact.form.whatsapp.text'),
-    '',
-    `${t('contact.form.whatsapp.name')} ${fields.fullName}`,
-    `${t('contact.form.whatsapp.phone')} ${fields.phone}`,
-    `${t('contact.form.whatsapp.service')} ${fields.service}`
+    t('contact.form.whatsapp.text')
+      .replace('{name}', fields.fullName)
+      .replace('{phone}', fields.phone)
+      .replace('{service}', fields.service)
   ];
 
   const handleWhatsApp = () => {
