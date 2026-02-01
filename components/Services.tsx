@@ -11,33 +11,6 @@ const Services: React.FC<ServicesProps> = ({ onBack }) => {
   const { t, language } = useLanguage();
   
   const services = [
-        // ...existing code for the 3 main services...
-        // ...existing code for the 3 main services...
-        // التسويق على مواقع التواصل الاجتماعي (آخر عنصر)
-        {
-          titleKey: "services.smm.title",
-          subtitleKey: "services.smm.subtitle",
-          icon: <Globe size={36} />,
-          descriptionKey: "services.smm.description",
-          featureKeys: [
-            "services.smm.feature1",
-            "services.smm.feature2",
-            "services.smm.feature3",
-            "services.smm.feature4"
-          ]
-        },
-        // الحلول البرمجية (آخر عنصر)
-        {
-          titleKey: "services.software.title",
-          subtitleKey: "services.software.subtitle",
-          icon: <MonitorSmartphone size={36} />,
-          descriptionKey: "services.software.description",
-          featureKeys: [
-            "services.software.feature1",
-            "services.software.feature2",
-            "services.software.feature3"
-          ]
-        }
     {
       titleKey: "services.service1.title",
       subtitleKey: "services.service1.subtitle",
@@ -71,6 +44,31 @@ const Services: React.FC<ServicesProps> = ({ onBack }) => {
         "services.service3.feature4"
       ]
     },
+    // التسويق على مواقع التواصل الاجتماعي (آخر عنصر)
+    {
+      titleKey: "services.smm.title",
+      subtitleKey: "services.smm.subtitle",
+      icon: <Globe size={36} />,
+      descriptionKey: "services.smm.description",
+      featureKeys: [
+        "services.smm.feature1",
+        "services.smm.feature2",
+        "services.smm.feature3",
+        "services.smm.feature4"
+      ]
+    },
+    // الحلول البرمجية (آخر عنصر)
+    {
+      titleKey: "services.software.title",
+      subtitleKey: "services.software.subtitle",
+      icon: <MonitorSmartphone size={36} />,
+      descriptionKey: "services.software.description",
+      featureKeys: [
+        "services.software.feature1",
+        "services.software.feature2",
+        "services.software.feature3"
+      ]
+    }
   ];
 
   return (
