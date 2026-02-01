@@ -64,6 +64,28 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.cta2': 'خدماتنا المتخصصة',
     'hero.feature1': 'دراسة مخططات هندسية',
     'hero.feature2': 'استشارات فنية مستقلة',
+        smm: {
+          title: "Social Media Marketing (SMM)",
+          subtitle: "Digital Marketing",
+          description:
+            "Specialized marketing solutions for medical clinics to increase your online presence and attract more patients.",
+          points: [
+            "Content creation and management for social media platforms",
+            "Targeted advertising campaigns for medical services",
+            "Reputation management and patient engagement",
+          ],
+        },
+        softwareSolutions: {
+          title: "Software Solutions",
+          subtitle: "Medical Software Solutions",
+          description:
+            "Custom software solutions to streamline clinic operations and enhance patient care.",
+          points: [
+            "Clinic management systems and electronic medical records",
+            "Online appointment booking and patient portals",
+            "Integration with medical devices and analytics",
+          ],
+        },
     'hero.feature3': 'حلول "تسليم مفتاح"',
     
     // About
